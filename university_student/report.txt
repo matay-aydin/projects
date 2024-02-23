@@ -1,0 +1,23 @@
+// Object type, instance name, method name, argument list
+
+university_array[3].evaluate_student(student3);
+|__ University, university_array[3], evaluate_student, (student3)
+    |__ Student, student3, get_app, ()
+    |__ Student, student3, set_app, (sapp + 1) // sapp = student3.get_app()
+    |__ Student, student3, get_gpa, ()
+    |__ Student, student3, get_toefl, ()
+    |__ Student, student3, get_gre, ()
+    |__ Student, student3, get_name, ()
+    |__ Student, student3, get_name, ()
+
+delete student4;
+|__ Student, student4, ~Student, ()
+
+return 0;}
+|__ University, university_array[0], ~University, ()
+|__ University, university_array[1], ~University, ()
+|__ University, university_array[2], ~University, ()
+|__ University, university_array[3], ~University, ()
+|__ Student, student1, ~Student, ()
+|__ Student, student2, ~Student, ()
+|__ Student, student3, ~Student, ()
