@@ -1,0 +1,12 @@
+1. open this directory in shell
+2. run "make -s run"
+if "make" is not installed, then run:
+3. gcc -Wall -Werror -Wextra -g -I include -c src/list.c bin/list.o
+4. gcc -Wall -Werror -Wextra -g -I include -c src/program.c -o bin/program.o
+5. gcc -I include include bin/list.o bin/program.o -o bin/main
+6. ./bin/main
+
+to delete binaries:
+7. run "make -s clean"
+or
+8. rm -f bin/list.o bin/program.o bin/main
